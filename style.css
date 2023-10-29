@@ -1,124 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 10px;
-    font-family: sans-serif;
-  }
-  body {
-    background-color: rgb(1, 1, 67);
-    color: white;
-  }
-  button {
-    padding: 5px 10px;
-    border: none;
-    background-color: rgb(0, 0, 78);
-    border: 1px solid rgb(0, 0, 255);
-    border-radius: 3px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  button:hover {
-    background-color: rgb(0, 0, 209);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(1, 1, 67);
+  color: white;
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(0, 0, 78);
+  border: 1px solid rgb(0, 0, 255);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: rgb(0, 0, 209);
+}
+.box {
+  max-width: 500px;
+  margin: 0px auto;
+  display: flex;
+  margin-top: 30px;
+  background-color: rgb(0, 0, 93);
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  min-height: 50vh;
+  border-radius: 5px;
+}
+#heading {
+  text-align: center;
+}
+.upperSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.upperSection input {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(0, 0, 54);
+  border: 1px solid rgb(0, 0, 63);
+  outline: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  background-color: rgb(0, 0, 114);
+  padding: 5px;
+  border-radius: 3px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.check input[type="text"] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  width: 40%;
+  outline: none;
+}
+.dualBtn {
+  display: flex;
+  gap: 10px;
+}
+.dualBtn button {
+  padding: 5px 8px;
+  border: none;
+}
+.dualBtn button:nth-child(2) {
+  color: rgb(255, 0, 0);
+}
+.dualBtn button:nth-child(2):hover {
+  color: white;
+  background-color: red;
+}
+.dualBtn button:nth-child(1) {
+  color: rgb(0, 255, 0);
+}
+.dualBtn button:nth-child(1):hover {
+  color: white;
+  background-color: green;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+#clear:hover {
+  color: red;
+  border: 1px solid red;
+  background-color: transparent;
+}
+@media (max-width: 475px) {
   .box {
-    max-width: 500px;
-    margin: 0px auto;
-    display: flex;
-    margin-top: 30px;
-    background-color: rgb(0, 0, 93);
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    min-height: 50vh;
-    border-radius: 5px;
-  }
-  #heading {
-    text-align: center;
-  }
-  .upperSection {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-  .upperSection input {
-    width: 100%;
-    padding: 5px;
-    /* background-color: rgb(0, 0, 63); */
-    background-color: rgb(0, 0, 54);
-    border: 1px solid rgb(0, 0, 63);
-    outline: none;
-    color: white;
-    font-size: 1.7rem;
-  }
-  
-  .tasks {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .task {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
-    background-color: rgb(0, 0, 114);
-    padding: 5px;
-    border-radius: 3px;
-  }
-  .check {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .check input[type="text"] {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    width: 40%;
-    outline: none;
-  }
-  .dualBtn {
-    display: flex;
-    gap: 10px;
-  }
-  .dualBtn button {
-    padding: 5px 8px;
-    border: none;
-  }
-  .dualBtn button:nth-child(2) {
-    color: rgb(255, 0, 0);
-  }
-  .dualBtn button:nth-child(2):hover {
-    color: white;
-    background-color: red;
-  }
-  .dualBtn button:nth-child(1) {
-    color: rgb(0, 255, 0);
-  }
-  .dualBtn button:nth-child(1):hover {
-    color: white;
-    background-color: green;
-  }
-  input[type="checkbox"] {
-    cursor: pointer;
-  }
-  #clear:hover {
-    color: red;
-    border: 1px solid red;
     background-color: transparent;
   }
-  @media (max-width: 475px) {
-    /* html{
-          font-size: 8px;
-      } */
-    .box {
-      background-color: transparent;
-    }
-  }
+}

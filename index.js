@@ -2,6 +2,9 @@ const input = document.querySelector("#main");
 const add = document.getElementById("add");
 const cls = document.getElementById("clear");
 const tasks = document.querySelector(".tasks");
+
+
+
 input.addEventListener("focus", (e) => {
   if (e.target.value == "") {
     e.target.style.border = "1px solid red";
