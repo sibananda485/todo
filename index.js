@@ -29,7 +29,7 @@ add.addEventListener("click", () => {
     n.innerHTML = `<div class="task">
     <div class="check">
     <input onchange="check(this)" type="checkbox"  />
-    <input type="text" readonly value=${input.value} >
+    <input type="text" readonly value="${input.value}" >
     </div>
     <div class="dualBtn">
     <button onclick="edit(this)">Edit</button>
